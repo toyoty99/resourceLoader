@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ResourceLoader - resourceLoader</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="resourceLoader" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 1.0.0</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/ResourceLoader.html">ResourceLoader</a></li>
+                            </ul>
+                
+                            <ul id="api-modules" class="apis modules">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1>ResourceLoader Class</h1>
+<div class="box meta">
+
+
+        <div class="foundat">
+            Defined in: <a href="../files/resourceLoader.js.html#l48"><code>resourceLoader.js:48</code></a>
+        </div>
+
+
+</div>
+
+
+<div class="box intro">
+    <p>constructor</p>
+
+</div>
+
+    <div class="constructor">
+        <h2>Constructor</h2>
+        <div id="method_ResourceLoader" class="method item">
+            <h3 class="name"><code>ResourceLoader</code></h3>
+        
+                <span class="paren">()</span>
+        
+        
+        
+        
+        
+        
+        
+        
+            <div class="meta">
+                        <p>
+                        Defined in
+                <a href="../files/resourceLoader.js.html#l48"><code>resourceLoader.js:48</code></a>
+                </p>
+        
+        
+        
+            </div>
+        
+            <div class="description">
+                
+            </div>
+        
+        
+        
+        
+        </div>
+    </div>
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods">
+                            <li class="index-item method private">
+                                <a href="#method_appendElement">appendElement</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_config">config</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_load">load</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_load">load</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_loadCss">loadCss</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_loadInParallel">loadInParallel</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_loadJs">loadJs</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_loadResource">loadResource</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+                <div class="index-section properties">
+                    <h3>Properties</h3>
+
+                    <ul class="index-list properties">
+                            <li class="index-item property">
+                                <a href="#property_callbacks">callbacks</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_defaults">defaults</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_header">header</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_loaded">loaded</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+
+        </div>
+
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+<div id="method_appendElement" class="method item private">
+    <h3 class="name"><code>appendElement</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>type</code>
+                </li>
+                <li class="arg">
+                        <code>attributes</code>
+                </li>
+                <li class="arg">
+                        <code>callback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/resourceLoader.js.html#l58"><code>resourceLoader.js:58</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>add new element to header</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">type</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>a type of element</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">attributes</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>attributes of element</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+
+
+                    <div class="param-description">
+                        <p>callback function whick will be invoked when element is loaded</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_config" class="method item">
+    <h3 class="name"><code>config</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>options</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/resourceLoader.js.html#l272"><code>resourceLoader.js:272</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>configure loader</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">options</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>ResourceLoader options</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                    <p>the instance of loader</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_load" class="method item private">
+    <h3 class="name"><code>load</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>urlAndCallback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/resourceLoader.js.html#l89"><code>resourceLoader.js:89</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>load resources in serial</p>
+<p>arguments is supposed as follows:<br/>
+  [&quot;url1&quot;, &quot;url2&quot;, ... &quot;urlN&quot;, callback]<br/>
+     or<br/>
+  [[&quot;url1&quot;, &quot;url2&quot;, ... &quot;urlN&quot;], callback]<br/>
+     or<br/>
+  combination of the above<br/></p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">urlAndCallback</code>
+                        <span class="type">Object</span>
+
+                        <span class="flag multiple" title="This argument may occur one or more times.">multiple</span>
+
+                    <div class="param-description">
+                        <p>resource urls and callback</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                    <p>the instance of loader</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_load" class="method item">
+    <h3 class="name"><code>load</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>urlAndCallback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/resourceLoader.js.html#l249"><code>resourceLoader.js:249</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>load resources</p>
+<p>arguments is supposed as follows:<br/>
+  [&quot;url1&quot;, &quot;url2&quot;, ... &quot;urlN&quot;, callback]<br/>
+     or<br/>
+  [[&quot;url1&quot;, &quot;url2&quot;, ... &quot;urlN&quot;], callback]<br/>
+     or<br/>
+  combination of the above</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">urlAndCallback</code>
+                        <span class="type">Object</span>
+
+                        <span class="flag multiple" title="This argument may occur one or more times.">multiple</span>
+
+                    <div class="param-description">
+                        <p>resource urls and callback</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                    <p>the instance of loader</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_loadCss" class="method item private">
+    <h3 class="name"><code>loadCss</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>url</code>
+                </li>
+                <li class="arg">
+                        <code>callback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/resourceLoader.js.html#l224"><code>resourceLoader.js:224</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>load Style Sheet</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">url</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>url of Style Sheet</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+
+
+                    <div class="param-description">
+                        <p>callback function whick will be invoked when resource is loaded</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_loadInParallel" class="method item private">
+    <h3 class="name"><code>loadInParallel</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>url</code>
+                </li>
+                <li class="arg">
+                        <code>callback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/resourceLoader.js.html#l131"><code>resourceLoader.js:131</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>load resources in parallel</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">url</code>
+                        <span class="type">String | Array</span>
+
+
+                    <div class="param-description">
+                        <p>url(s) of resource</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+
+
+                    <div class="param-description">
+                        <p>callback function whick will be invoked when resource is loaded</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_loadJs" class="method item private">
+    <h3 class="name"><code>loadJs</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>url</code>
+                </li>
+                <li class="arg">
+                        <code>callback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/resourceLoader.js.html#l175"><code>resourceLoader.js:175</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>load JavaScript</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">url</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>url of JavaScript</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+
+
+                    <div class="param-description">
+                        <p>callback function whick will be invoked when resource is loaded</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_loadResource" class="method item private">
+    <h3 class="name"><code>loadResource</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>url</code>
+                </li>
+                <li class="arg">
+                        <code>callback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/resourceLoader.js.html#l156"><code>resourceLoader.js:156</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>load resource</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">url</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>url of resource</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">callback</code>
+                        <span class="type">Function</span>
+
+
+                    <div class="param-description">
+                        <p>callback function whick will be invoked when resource is loaded</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+            </div>
+
+            <div id="properties" class="api-class-tabpanel">
+                <h2 class="off-left">Properties</h2>
+
+                    <div id="property_callbacks" class="property item">
+                        <h3 class="name"><code>callbacks</code></h3>
+                        <span class="type">Object</span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                                    Defined in
+                            <a href="../files/resourceLoader.js.html#l30"><code>resourceLoader.js:30</code></a>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>a map of callbacks whick will be invoked when resource is loaded</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="property_defaults" class="property item">
+                        <h3 class="name"><code>defaults</code></h3>
+                        <span class="type">Object</span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                                    Defined in
+                            <a href="../files/resourceLoader.js.html#l37"><code>resourceLoader.js:37</code></a>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>default options</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="property_header" class="property item">
+                        <h3 class="name"><code>header</code></h3>
+                        <span class="type">Object</span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                                    Defined in
+                            <a href="../files/resourceLoader.js.html#l16"><code>resourceLoader.js:16</code></a>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>header element (or document element)</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="property_loaded" class="property item">
+                        <h3 class="name"><code>loaded</code></h3>
+                        <span class="type">Object</span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                                    Defined in
+                            <a href="../files/resourceLoader.js.html#l23"><code>resourceLoader.js:23</code></a>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>a map of whether resource is loaded or not</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+            </div>
+
+
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+{
+    "project": {
+        "name": "resourceLoader",
+        "description": "Simple resource (CSS/JavaScript) loader",
+        "version": "1.0.0",
+        "url": "https://github.com/toyoty99/resourceLoader"
+    },
+    "files": {
+        "resourceLoader.js": {
+            "name": "resourceLoader.js",
+            "modules": {},
+            "classes": {
+                "ResourceLoader": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "ResourceLoader": {
+            "name": "ResourceLoader",
+            "shortname": "ResourceLoader",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "resourceLoader.js",
+            "line": 48,
+            "description": "constructor",
+            "is_constructor": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "resourceLoader.js",
+            "line": 16,
+            "description": "header element (or document element)",
+            "itemtype": "property",
+            "name": "header",
+            "type": "Object",
+            "class": "ResourceLoader"
+        },
+        {
+            "file": "resourceLoader.js",
+            "line": 23,
+            "description": "a map of whether resource is loaded or not",
+            "itemtype": "property",
+            "name": "loaded",
+            "type": "Object",
+            "class": "ResourceLoader"
+        },
+        {
+            "file": "resourceLoader.js",
+            "line": 30,
+            "description": "a map of callbacks whick will be invoked when resource is loaded",
+            "itemtype": "property",
+            "name": "callbacks",
+            "type": "Object",
+            "class": "ResourceLoader"
+        },
+        {
+            "file": "resourceLoader.js",
+            "line": 37,
+            "description": "default options",
+            "itemtype": "property",
+            "name": "defaults",
+            "type": "Object",
+            "class": "ResourceLoader"
+        },
+        {
+            "file": "resourceLoader.js",
+            "line": 58,
+            "description": "add new element to header",
+            "itemtype": "method",
+            "name": "appendElement",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "a type of element",
+                    "type": "String"
+                },
+                {
+                    "name": "attributes",
+                    "description": "attributes of element",
+                    "type": "Object"
+                },
+                {
+                    "name": "callback",
+                    "description": "callback function whick will be invoked when element is loaded",
+                    "type": "Function"
+                }
+            ],
+            "class": "ResourceLoader"
+        },
+        {
+            "file": "resourceLoader.js",
+            "line": 89,
+            "description": "load resources in serial\n\narguments is supposed as follows:<br/>\n  [\"url1\", \"url2\", ... \"urlN\", callback]<br/>\n     or<br/>\n  [[\"url1\", \"url2\", ... \"urlN\"], callback]<br/>\n     or<br/>\n  combination of the above<br/>",
+            "itemtype": "method",
+            "name": "load",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "urlAndCallback",
+                    "description": "resource urls and callback",
+                    "type": "Object",
+                    "multiple": true
+                }
+            ],
+            "return": {
+                "description": "the instance of loader"
+            },
+            "class": "ResourceLoader"
+        },
+        {
+            "file": "resourceLoader.js",
+            "line": 131,
+            "description": "load resources in parallel",
+            "itemtype": "method",
+            "name": "loadInParallel",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "url",
+                    "description": "url(s) of resource",
+                    "type": "String|Array"
+                },
+                {
+                    "name": "callback",
+                    "description": "callback function whick will be invoked when resource is loaded",
+                    "type": "Function"
+                }
+            ],
+            "class": "ResourceLoader"
+        },
+        {
+            "file": "resourceLoader.js",
+            "line": 156,
+            "description": "load resource",
+            "itemtype": "method",
+            "name": "loadResource",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "url",
+                    "description": "url of resource",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "callback function whick will be invoked when resource is loaded",
+                    "type": "Function"
+                }
+            ],
+            "class": "ResourceLoader"
+        },
+        {
+            "file": "resourceLoader.js",
+            "line": 175,
+            "description": "load JavaScript",
+            "itemtype": "method",
+            "name": "loadJs",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "url",
+                    "description": "url of JavaScript",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "callback function whick will be invoked when resource is loaded",
+                    "type": "Function"
+                }
+            ],
+            "class": "ResourceLoader"
+        },
+        {
+            "file": "resourceLoader.js",
+            "line": 224,
+            "description": "load Style Sheet",
+            "itemtype": "method",
+            "name": "loadCss",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "url",
+                    "description": "url of Style Sheet",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "callback function whick will be invoked when resource is loaded",
+                    "type": "Function"
+                }
+            ],
+            "class": "ResourceLoader"
+        },
+        {
+            "file": "resourceLoader.js",
+            "line": 249,
+            "description": "load resources\n\narguments is supposed as follows:<br/>\n  [\"url1\", \"url2\", ... \"urlN\", callback]<br/>\n     or<br/>\n  [[\"url1\", \"url2\", ... \"urlN\"], callback]<br/>\n     or<br/>\n  combination of the above",
+            "itemtype": "method",
+            "name": "load",
+            "params": [
+                {
+                    "name": "urlAndCallback",
+                    "description": "resource urls and callback",
+                    "type": "Object",
+                    "multiple": true
+                }
+            ],
+            "return": {
+                "description": "the instance of loader"
+            },
+            "class": "ResourceLoader"
+        },
+        {
+            "file": "resourceLoader.js",
+            "line": 272,
+            "description": "configure loader",
+            "itemtype": "method",
+            "name": "config",
+            "params": [
+                {
+                    "name": "options",
+                    "description": "ResourceLoader options",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "the instance of loader"
+            },
+            "class": "ResourceLoader"
+        }
+    ],
+    "warnings": []
+}

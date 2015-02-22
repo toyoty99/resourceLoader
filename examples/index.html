@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>loader examples: Basic</title>
+  <script language="javascript" type="text/javascript" src="../resourceLoader.js"></script>
+  <script language="javascript" type="text/javascript">
+    resourceLoader
+      // .load(function() {
+      //   console.log("callback is invoked");
+      // })
+      // .load("./js/js1.js", function() {
+      //   console.log("js1.js is loaded");
+      // })
+      // .load("./js/js1.js", function() {
+      //   console.log("js1.js is loaded 2");
+      // });
+      // .load("./css/css1.css", function() {
+      //   console.log("css1.css is loaded");
+      // });
+      // .load(["./js/js2.js", "./css/css2.css"], function() {
+      //   console.log("js2.js and css2.css are loaded");
+      // });
+      // .load(["./js/js3.js", "./js/js4.js"], "./js/js5.js", function() {
+      //   console.log("js3.js and js4.js and js5.js are loaded");
+      // });
+      .config({regexpJs: /_js\b/, foo: "bar"})
+      .load(["./js/js6_js", "./css/css3_css"], function() {
+        console.log("js6_js and css3_css are loaded");
+      });
+  </script>
+</head>
+<body>
+  <span class="span1">span1</span><br/>
+  <span class="span2">span2</span><br/>
+  <span class="span3">span3</span>
+</body>
+</html>
